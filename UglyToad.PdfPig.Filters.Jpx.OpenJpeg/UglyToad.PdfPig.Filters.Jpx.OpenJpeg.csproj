@@ -45,4 +45,8 @@
 	  <PackageReference Include="PdfPig" Version="0.1.11-alpha-20250602-89abf" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\external\OpenJPEG.net\OpenJpeg.net.csproj" />
+	</ItemGroup>
+
 </Project>
