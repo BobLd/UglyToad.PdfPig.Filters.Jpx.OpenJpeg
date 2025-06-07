@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.PdfPig.Filters.Jpx.OpenJpeg", "UglyToad.PdfPig.Filters.Jpx.OpenJpeg\UglyToad.PdfPig.Filters.Jpx.OpenJpeg.csproj", "{A2A50A2B-127D-4FF9-A800-DF46326CFF27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "external", "external", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenJpeg.net", "external\OpenJPEG.net\OpenJpeg.net.csproj", "{1912D36C-D4CC-41A2-A6F7-9308A125AFA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.PdfPig.Filters.Jpx.OpenJpeg.Tests", "UglyToad.PdfPig.Filters.Jpx.OpenJpeg.Tests\UglyToad.PdfPig.Filters.Jpx.OpenJpeg.Tests.csproj", "{54104DA1-B941-49C4-A043-74204FBB4693}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2A50A2B-127D-4FF9-A800-DF46326CFF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A50A2B-127D-4FF9-A800-DF46326CFF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A50A2B-127D-4FF9-A800-DF46326CFF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A50A2B-127D-4FF9-A800-DF46326CFF27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1912D36C-D4CC-41A2-A6F7-9308A125AFA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1912D36C-D4CC-41A2-A6F7-9308A125AFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1912D36C-D4CC-41A2-A6F7-9308A125AFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1912D36C-D4CC-41A2-A6F7-9308A125AFA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54104DA1-B941-49C4-A043-74204FBB4693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54104DA1-B941-49C4-A043-74204FBB4693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54104DA1-B941-49C4-A043-74204FBB4693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54104DA1-B941-49C4-A043-74204FBB4693}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1912D36C-D4CC-41A2-A6F7-9308A125AFA0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D07CF429-4EFE-4E3F-9B8F-3597A4294FE0}
+	EndGlobalSection
+EndGlobal
