@@ -82,6 +82,11 @@ namespace UglyToad.PdfPig.Filters.Jpx.OpenJpeg
             }
             //Note, we don't here handle grayscale or CMY format. 
 
+            using (var fs = new FileStream($"openjpeg_{Guid.NewGuid()}.bmp", FileMode.CreateNew))
+            {
+                img.ConvertToBMP(fs, cInfo);
+            }
+
             //Assembles the image into a stream of bytes
             using (var ms = img.ToMemoryStream())
             {
