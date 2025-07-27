@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;net462;net471;net6.0;net8.0</TargetFrameworks>
 		<LangVersion>12</LangVersion>
-		<Version>0.1.11.1</Version>
+		<Version>0.1.11.2</Version>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
@@ -46,10 +46,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\external\OpenJPEG.net\OpenJpeg.net.csproj" >
-			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-			<IncludeAssets>OpenJpeg.net.dll</IncludeAssets>
-		</ProjectReference>
+		<Compile Include="..\external\OpenJPEG.net\*.cs" />
+		<Compile Include="..\external\OpenJPEG.net\Internal\*.cs" />
+		<Compile Include="..\external\OpenJPEG.net\Util\*.cs" />
 	</ItemGroup>
 
 </Project>
