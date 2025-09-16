@@ -62,19 +62,11 @@ namespace UglyToad.PdfPig.Filters.Jpx.OpenJpeg
             //that.
             img.ApplyIndex();
 
-            //Handle some color spaces. Note, img.CMYKtoRGB() implements the
-            //reference conversion algorithm. You should propbably use something
-            //better. See CMYKFilter in PdfLib for ways to do this.
+            //Handle some color spaces.
             switch (img.ColorSpace)
             {
                 case COLOR_SPACE.YCCK:
                     if (!img.ESyccToRGB())
-                    {
-                        throw new Exception("Failed to RGB convert image");
-                    }
-                    break;
-                case COLOR_SPACE.CMYK:
-                    if (!img.CMYKtoRGB())
                     {
                         throw new Exception("Failed to RGB convert image");
                     }
