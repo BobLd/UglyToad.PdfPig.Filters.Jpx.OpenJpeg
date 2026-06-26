@@ -89,9 +89,17 @@ namespace UglyToad.PdfPig.Filters.Jpx.OpenJpeg
             // Note, we don't here handle grayscale or CMY format. 
 
             // Assembles the image into a stream of bytes
-            using (var ms = img.ToMemoryStream())
+            try
             {
-                return ms.AsMemory();
+                using (var ms = img.ToMemoryStream())
+                {
+                    return ms.AsMemory();
+                }
+            }
+            finally
+            {
+                // Return any ArrayPool-rented per-component buffers to the shared pool.
+                img.ReleasePooledBuffers();
             }
         }
 
