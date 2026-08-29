@@ -7,18 +7,14 @@
 		<Nullable>enable</Nullable>
 		<IsPackable>false</IsPackable>
 		<IsTestProject>true</IsTestProject>
-		<IsTestingPlatformApplication>false</IsTestingPlatformApplication>
 		<OutputType>Exe</OutputType>
+		<UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="coverlet.collector" Version="6.0.0" />
-		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
 		<PackageReference Include="xunit.v3" Version="4.0.0" />
-		<PackageReference Include="xunit.runner.visualstudio" Version="4.0.0">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
+		<PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.1.0" />
+		<PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="2.3.3" />
 	</ItemGroup>
 
 	<ItemGroup>
