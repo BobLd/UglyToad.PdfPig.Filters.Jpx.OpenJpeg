@@ -14,8 +14,7 @@ namespace UglyToad.PdfPig.Filters.Jpx.OpenJpeg.Tests
             FilterProvider = JpxFilterProvider.Instance
         };
 
-        public static IEnumerable<object[]> GetAllDocuments => Directory.EnumerateFiles(_path, "*.pdf")
-            .Select(p => new object[] { p });
+        public static TheoryData<string> GetAllDocuments => [.. Directory.EnumerateFiles(_path, "*.pdf")];
 
         public RenderImagesTest()
         {
